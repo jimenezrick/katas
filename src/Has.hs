@@ -1,4 +1,5 @@
 {-# LANGUAGE FlexibleInstances #-}
+{-# LANGUAGE FlexibleContexts #-}
 
 --
 -- https://www.reddit.com/r/haskell/comments/6jy8yu/the_has_type_class_pattern/
@@ -6,8 +7,10 @@
 module Has where
 
 import Control.Monad.Reader
+import Data.Has
 import Data.Set (Set)
 import Data.Set as S
+import Lens.Micro
 
 data Thing =
     Thing
@@ -60,3 +63,9 @@ thisAndThat = do
     if b
         then return n
         else return (n + 1)
+
+takeList :: Has [Int] a => a -> [Int]
+takeList a = a ^. hasLens
+
+test :: (Bool, [Int]) -> [Int]
+test = takeList
