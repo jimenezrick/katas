@@ -15,9 +15,12 @@ executable katas
   hs-source-dirs:      src
   main-is:             Main.hs
   other-modules:       Has
+                     , ForAll
                      , FunDeps
+                     , Heterogeneous
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
                      , data-has
                      , microlens
+                     , HList
