@@ -1,7 +1,5 @@
 name:                haskell-katas
 version:             0.1.0.0
-license:             BSD3
-license-file:        LICENSE
 author:              Ricardo Catalinas Jiménez
 maintainer:          r@untroubled.be
 build-type:          Simple
@@ -18,9 +16,14 @@ executable katas
                      , ForAll
                      , FunDeps
                      , Heterogeneous
+                     , Script
+                     , Exceptions
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
                      , data-has
                      , microlens
+                     , typed-process
+                     , errors
+                     , safe-exceptions
                      , HList
