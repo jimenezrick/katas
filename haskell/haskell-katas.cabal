@@ -18,6 +18,7 @@ executable katas
                      , Script
                      , Exceptions
                      , Containers
+                     , Lift
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
@@ -27,4 +28,5 @@ executable katas
                      , errors
                      , safe-exceptions
                      , mono-traversable
+                     , unliftio
                      , HList
