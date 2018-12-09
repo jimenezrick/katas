@@ -9,7 +9,6 @@ cabal-version:       2.0
 executable katas
   ghc-options:         -Wall
   default-language:    Haskell2010
-  default-extensions:  OverloadedStrings
   hs-source-dirs:      src
   main-is:             Main.hs
   other-modules:       Has
@@ -18,6 +17,7 @@ executable katas
                      , Heterogeneous
                      , Script
                      , Exceptions
+                     , Containers
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
@@ -26,4 +26,5 @@ executable katas
                      , typed-process
                      , errors
                      , safe-exceptions
+                     , mono-traversable
                      , HList
