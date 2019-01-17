@@ -19,6 +19,7 @@ executable katas
                      , Exceptions
                      , Containers
                      , Lift
+                     , OtherPrelude
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
@@ -29,4 +30,5 @@ executable katas
                      , safe-exceptions
                      , mono-traversable
                      , unliftio
+                     , rio
                      , HList
