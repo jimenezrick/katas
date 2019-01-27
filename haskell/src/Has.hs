@@ -10,7 +10,7 @@ import Control.Monad.Reader
 import Data.Has
 import Data.Set (Set)
 import Data.Set as S
-import Lens.Micro
+import Lens.Micro.Platform
 
 data Thing =
     Thing

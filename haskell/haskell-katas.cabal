@@ -20,15 +20,17 @@ executable katas
                      , Containers
                      , Lift
                      , OtherPrelude
+                     , Lens
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
                      , data-has
-                     , microlens
+                     , microlens-platform
                      , typed-process
                      , errors
                      , safe-exceptions
                      , mono-traversable
                      , unliftio
                      , rio
-                     , HList
+                     , text
+                     , unordered-containers
