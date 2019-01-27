@@ -25,6 +25,7 @@ executable katas
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
+                     , transformers
                      , data-has
                      , microlens-platform
                      , typed-process
