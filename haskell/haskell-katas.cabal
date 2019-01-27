@@ -21,6 +21,7 @@ executable katas
                      , Lift
                      , OtherPrelude
                      , Lens
+                     , Error
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
