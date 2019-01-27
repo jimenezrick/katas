@@ -19,8 +19,9 @@ fail1 = do
 
 fail2 :: ExceptT String IO Int
 fail2 = do
-    ExceptT failE
+    x <- ExceptT failE
     throwError "fuck"
+    return $ x + 1
 
 failE :: IO (Either String Int)
 failE = return $ Left "failE"
