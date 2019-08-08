@@ -5,5 +5,6 @@ fn main() {
     let a: [i32; 3] = [1, 2, 3];
 
     println!("s = {:?}", s);
+    println!("s = {:?}", s.len());
     println!("a = {:?}", a);
 }

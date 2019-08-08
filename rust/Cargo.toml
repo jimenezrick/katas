@@ -1,0 +1,9 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["Ricardo Catalinas Jiménez <r@untroubled.be>"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.1.15"
+crossbeam-channel = "0.3"
