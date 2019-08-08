@@ -23,6 +23,7 @@ executable katas
                      , Lens
                      , Error
                      , Continuation
+                     , TypeApplications
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
