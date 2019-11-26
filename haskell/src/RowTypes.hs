@@ -42,3 +42,9 @@ originXYZmoved10 = originXYZ `moveLensX` 10
 
 fromOriginXYZ :: Rec ("x" .== Double .+ "y" .== Double)
 fromOriginXYZ = restrict @("x" .== Double .+ "y" .== Double) originXYZ
+
+oneOf :: Var ("foo" .== String .+ "bar" .== Int)
+oneOf = IsJust #foo "caca"
+
+butAlso :: Var ("foo" .== String .+ "bar" .== Int .+ "zzz" .== Double)
+butAlso = diversify @("zzz" .== Double) oneOf
