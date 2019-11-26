@@ -1,4 +1,5 @@
 cabal-version:       3.0
+
 name:                haskell-katas
 version:             0.1.0.0
 author:              Ricardo Catalinas Jiménez
@@ -24,6 +25,7 @@ executable katas
                      , Error
                      , Continuation
                      , TypeApplications
+                     , RowTypes
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
@@ -38,3 +40,5 @@ executable katas
                      , rio
                      , text
                      , unordered-containers
+                     , generic-lens
+                     , row-types
