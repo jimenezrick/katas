@@ -1,4 +1,8 @@
 write-ghc-environment-files: always
---profiling: True
+optimization: False
+profiling: False
 
 packages: .
+
+package haskell-katas
+  ghc-options: -j +RTS -A64m -RTS
