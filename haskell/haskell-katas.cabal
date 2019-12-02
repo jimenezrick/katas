@@ -26,6 +26,7 @@ executable katas
                      , Continuation
                      , TypeApplications
                      , RowTypes
+                     , Effects
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
@@ -42,3 +43,5 @@ executable katas
                      , unordered-containers
                      , generic-lens
                      , row-types
+                     , polysemy
+                     , polysemy-plugin
