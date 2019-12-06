@@ -27,6 +27,7 @@ executable katas
                      , TypeApplications
                      , RowTypes
                      , Effects
+                     , Effects2
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl

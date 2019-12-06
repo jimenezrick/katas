@@ -1,8 +1,13 @@
---{-# OPTIONS_GHC -fplugin=Polysemy.Plugin #-}
+{-# LANGUAGE BlockArguments #-}
+{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE FlexibleContexts #-}
+{-# LANGUAGE GADTs #-}
+{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE PolyKinds #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TemplateHaskell #-}
-{-# LANGUAGE GADTs, FlexibleContexts, TypeOperators, DataKinds,
-  PolyKinds, ScopedTypeVariables #-}
-{-# LANGUAGE LambdaCase, BlockArguments #-}
+{-# LANGUAGE TypeOperators #-}
+{-# OPTIONS_GHC -fplugin=Polysemy.Plugin #-}
 
 module Effects where
 
