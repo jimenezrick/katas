@@ -1,5 +1,5 @@
 write-ghc-environment-files: always
-optimization: False
+optimization: 2
 profiling: False
 
 packages: .
