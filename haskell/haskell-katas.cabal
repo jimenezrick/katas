@@ -28,6 +28,7 @@ executable katas
                      , RowTypes
                      , Effects
                      , Effects2
+                     , MaxOverlapSets
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl
@@ -46,3 +47,8 @@ executable katas
                      , row-types
                      , polysemy
                      , polysemy-plugin
+                     , vector
+                     , vector-algorithms
+                     , primitive
+                     , doctest
+                     , criterion
