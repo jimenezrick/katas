@@ -49,9 +49,8 @@ benchmark = do
     ]
 
 computeMaxOverlap :: PrimMonad m => Int -> ReplicasMtx (PrimState m) -> m Int
-computeMaxOverlap minReplicas mtx = do
-  maxs <- V.mapM (MV.clone >=> maxReplicaOverlap minReplicas) mtx
-  return $ V.minimum maxs
+computeMaxOverlap minReplicas mtx =
+  V.minimum <$> V.mapM (MV.clone >=> maxReplicaOverlap minReplicas) mtx
 
 test :: IO ()
 test = do
