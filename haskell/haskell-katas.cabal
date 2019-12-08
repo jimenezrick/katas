@@ -50,5 +50,4 @@ executable katas
                      , vector
                      , vector-algorithms
                      , primitive
-                     , doctest
                      , criterion
