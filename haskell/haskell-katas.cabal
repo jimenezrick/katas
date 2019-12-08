@@ -28,7 +28,7 @@ executable katas
                      , RowTypes
                      , Effects
                      , Effects2
-                     , MaxOverlapSets
+                     , MaxMinCounts
   build-depends:       base >=4.11 && <5
                      , containers
                      , mtl

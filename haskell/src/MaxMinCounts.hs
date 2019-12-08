@@ -1,4 +1,4 @@
-module MaxOverlapSets where
+module MaxMinCounts where
 
 import Control.Monad
 import Control.Monad.Primitive
